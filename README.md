@@ -1,9 +1,12 @@
 # Building a Simple Distributed System
 
 # Assignment Description
-In this coding assignment, you will design and implement a simple distributed system in Python. The distributed system should include the following components:
 
-Server Clustering: Multiple server instances running on different ports.
-Client Registration: Clients can register with a specific server instance.
-Data Sharing: Clients can share data through the server.
-Fault Tolerance: The system should handle server failures gracefully.
+This is a distributed chat application that allows users to communicate with each other over a network. The application consists of a server that handles incoming connections from clients and facilitates communication between them.
+
+# Features
+
+1. Allows multiple clients to connect to the server simultaneously
+2. Clients can send and receive messages in real-time
+3. Server broadcasts messages to all connected clients except the sender
+4. Clients can see when other users join or leave the chat
