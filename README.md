@@ -72,6 +72,7 @@ This is a distributed chat application that allows users to communicate with eac
      ![Screenshot 10](https://github.com/schitluri98/DCC-Midterm-Group-3/assets/61785648/17e2285c-3e50-4291-b174-2bd51a0e9102)
 
 6. **Testing**
+
    6.1 Interport Communication
    
    - Start the server, which will listen on ports 8080, 8081, and 8082.
