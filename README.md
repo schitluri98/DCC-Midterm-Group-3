@@ -34,30 +34,40 @@ This is a distributed chat application that allows users to communicate with eac
 ## Screenshots
 
 1. **Start the server in a cluster (localhost:8080, localhost:8081, localhost:8082)**
+
    ![Screenshot 1](https://github.com/schitluri98/DCC-Midterm-Group-3/assets/61785648/52192ba9-fc0a-4dfb-98fb-5a275c00d923)
 
 2. **Client Registration**
    - Register Client 1 in localhost:8080
-     ![Screenshot 2](https://github.com/schitluri98/DCC-Midterm-Group-3/assets/61785648/694717f1-76f7-4ba3-bfd9-97f20f5a45d5)
+
+      ![Screenshot 2](https://github.com/schitluri98/DCC-Midterm-Group-3/assets/61785648/694717f1-76f7-4ba3-bfd9-97f20f5a45d5)
    - Register Client 2 in localhost:8080
-     ![Screenshot 3](https://github.com/schitluri98/DCC-Midterm-Group-3/assets/61785648/d12016fd-c7f4-4ca3-9671-73620c086628)
+
+      ![Screenshot 3](https://github.com/schitluri98/DCC-Midterm-Group-3/assets/61785648/d12016fd-c7f4-4ca3-9671-73620c086628)
 
 3. **Check if clients are successfully registered with the server**
-   ![Screenshot 5](https://github.com/schitluri98/DCC-Midterm-Group-3/assets/61785648/ebe82ad4-c6a3-4809-b3a9-7c2a43a1fbad)
+
+    ![Screenshot 5](https://github.com/schitluri98/DCC-Midterm-Group-3/assets/61785648/ebe82ad4-c6a3-4809-b3a9-7c2a43a1fbad)
 
 4. **Data Sharing**
    - Send a message from Client 1
-     ![Screenshot 4](https://github.com/schitluri98/DCC-Midterm-Group-3/assets/61785648/5e58e3b1-100c-4ce5-965b-c4c5729c5fa1)
+
+      ![Screenshot 4](https://github.com/schitluri98/DCC-Midterm-Group-3/assets/61785648/5e58e3b1-100c-4ce5-965b-c4c5729c5fa1)
    - Check if the message has been delivered to Client 2
-     ![Screenshot 6](https://github.com/schitluri98/DCC-Midterm-Group-3/assets/61785648/fd810728-fbd3-423b-b18e-36293a6f16d4)
+
+      ![Screenshot 6](https://github.com/schitluri98/DCC-Midterm-Group-3/assets/61785648/fd810728-fbd3-423b-b18e-36293a6f16d4)
    - Send a reply from Client 2
+   
      ![Screenshot 7](https://github.com/schitluri98/DCC-Midterm-Group-3/assets/61785648/057c6d6d-c149-40c3-a6ae-c7b155acf509)
 
 5. **Fault Tolerance**
    - I explicitly throw an error in the server to see how the system is behaving during data sharing
+   
      ![Screenshot 8](https://github.com/schitluri98/DCC-Midterm-Group-3/assets/61785648/55d524ca-c652-47a2-9d9b-0a5c1e0dd7be)
    - Let's try to send a message from Client 1
+   
      ![Screenshot 9](https://github.com/schitluri98/DCC-Midterm-Group-3/assets/61785648/cca2ec03-e38d-45e9-bca6-41831884f821)
    - It seems like the system is not breaking down and handling the errors properly and data was not shared.
+
      ![Screenshot 10](https://github.com/schitluri98/DCC-Midterm-Group-3/assets/61785648/17e2285c-3e50-4291-b174-2bd51a0e9102)
 
