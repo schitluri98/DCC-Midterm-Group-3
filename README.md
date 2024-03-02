@@ -77,7 +77,7 @@ This is a distributed chat application that allows users to communicate with eac
    
    - Start the server, which will listen on ports 8080, 8081, and 8082.
      
-     ![image](https://github.com/schitluri98/DCC-Midterm-Group-3/assets/61785648/40bee0f9-0557-49a8-a5cc-0ca680f84037)
+    ![S11](https://github.com/schitluri98/DCC-Midterm-Group-3/assets/61785648/9c9e44e0-a53c-4293-8749-e05520c2213c)
 
      Client 1 connects to the server using port 8080.
      
