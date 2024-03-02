@@ -14,8 +14,8 @@ def receive_messages(client_socket):
 def send_messages(client_socket, username):
     while True:
         try:
-            message = input("Type a message: ")
-            client_socket.sendall((f"{username}: {message}").encode())
+            message = input("Type your Message")
+            client_socket.sendall(f"{username}: {message}".encode())
         except Exception as e:
             print(f"Error sending message: {e}")
             break

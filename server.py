@@ -44,20 +44,22 @@ class Server:
             client_socket.close()
 
     def broadcast_message(self, message, sender):
-        for client_username, client_socket in self.clients.items():
-            if client_username != sender:
-                try:
-                    client_socket.sendall(f"{sender}: {message}".encode())
-                except Exception as e:
-                    print(f"Error sending message to {client_username}: {e}")
+        for server in self.servers:
+            for client_username, client_socket in server.clients.items():
+                if client_username != sender:
+                    try:
+                        client_socket.sendall(f"{sender}: {message}".encode())
+                    except Exception as e:
+                        print(f"Error sending message to {client_username} on port {server.port}: {e}")
 
     def share_data(self, message, sender):
         _, recipient, data = message.split(" ", 2)
-        if recipient in self.clients:
-            try:
-                self.clients[recipient].sendall(f"{sender} shared: {data}".encode())
-            except Exception as e:
-                print(f"Error sending data to {recipient}: {e}")
+        for server in self.servers:
+            if recipient in server.clients:
+                try:
+                    server.clients[recipient].sendall(f"{sender} shared: {data}".encode())
+                except Exception as e:
+                    print(f"Error sending data to {recipient} on port {server.port}: {e}")
 
     def client_heartbeat(self):
         while self.running:
@@ -81,17 +83,18 @@ class Server:
                     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
                     client_socket.connect(('localhost', server.port))
                     client_socket.sendall(f"{username} has joined the chat.".encode())
-                    self.clients[username] = client_socket
+                    server.clients[username] = client_socket
                     print(f"Replicated {username} to server {server.port}")
                     break
                 except Exception as e:
                     print(f"Error replicating {username} to server {server.port}: {e}")
 
     def remove_client(self, username):
-        if username in self.clients:
-            self.clients[username].close()
-            del self.clients[username]
-            print(f"{username} has left the chat.")
+        for server in self.servers:
+            if username in server.clients:
+                server.clients[username].close()
+                del server.clients[username]
+                print(f"{username} has left the chat.")
 
 def main():
     servers = []
