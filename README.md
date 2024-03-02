@@ -71,3 +71,27 @@ This is a distributed chat application that allows users to communicate with eac
 
      ![Screenshot 10](https://github.com/schitluri98/DCC-Midterm-Group-3/assets/61785648/17e2285c-3e50-4291-b174-2bd51a0e9102)
 
+6. **Testing**
+   6.1 Interport Communication
+   
+   - Start the server, which will listen on ports 8080, 8081, and 8082.
+     
+     ![image](https://github.com/schitluri98/DCC-Midterm-Group-3/assets/61785648/40bee0f9-0557-49a8-a5cc-0ca680f84037)
+
+     Client 1 connects to the server using port 8080.
+     
+     ![S12](https://github.com/schitluri98/DCC-Midterm-Group-3/assets/61785648/eb27ea89-c3ea-4473-859f-1a3254926d29)
+
+     Client 2 connects to the server using port 8081.
+     
+     ![S13](https://github.com/schitluri98/DCC-Midterm-Group-3/assets/61785648/3199491a-bbe9-4b37-8dd7-e24d1259aa97)
+
+     Client 1 sends a message to the server, which will broadcast it to all clients, including Client 2.
+     
+     ![S14](https://github.com/schitluri98/DCC-Midterm-Group-3/assets/61785648/60af86d2-b9e1-4ff7-9cb0-06302d039872)
+
+     Client 2 receives the message from the server.
+     
+     ![S15](https://github.com/schitluri98/DCC-Midterm-Group-3/assets/61785648/b59db4fc-ad0a-4234-9e99-afae2fe8e3c9)
+
+
