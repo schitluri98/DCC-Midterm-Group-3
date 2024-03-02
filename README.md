@@ -14,12 +14,13 @@ This is a distributed chat application that allows users to communicate with eac
 # Instructions
 
 1. Clone the repository to your local machine:
-  • git clone https://github.com/your_username/distributed-chat.git
-2. Navigate to the project directory: cd distributed-chat
-3. Start the server:
+  • git clone https://github.com/schitluri98/DCC-Midterm-Group-3.git
+2. Start the server:
   • Open a terminal and run the following command: python server.py
-4. Start a client:
+3. Start a client:
   • Open another terminal and run the following command: python client.py
   • Enter your username when prompted
   • Enter the server address (e.g., localhost:8080) when prompted
-5. Repeat step 4 to start additional clients and communicate with other users
+4. Repeat step 3 to start additional clients and communicate with other users
+
+# Screenshots
